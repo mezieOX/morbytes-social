@@ -13,7 +13,7 @@ const config: Config = {
         black: "#050505",
         dark: {
           DEFAULT: "#1E1E1E",
-          light: "#232323",
+          light: "#101010",
           lighter: "#EEEEEE",
           semi: "#494747",
           medium: "#262626",
