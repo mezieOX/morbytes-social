@@ -1,4 +1,4 @@
-const Share = () => {
+const Share = ({ className }: { className: string }) => {
   return (
     <svg
       width={20}
@@ -6,6 +6,7 @@ const Share = () => {
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M4.24 13.24C6.0294 13.24 7.48 11.7894 7.48 10C7.48 8.21061 6.0294 6.76001 4.24 6.76001C2.4506 6.76001 1 8.21061 1 10C1 11.7894 2.4506 13.24 4.24 13.24Z"

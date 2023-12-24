@@ -1,4 +1,4 @@
-const Menu = () => {
+const Menu = ({ className }: { className: string }) => {
   return (
     <svg
       width={5}
@@ -6,6 +6,7 @@ const Menu = () => {
       viewBox="0 0 5 19"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <circle
         cx="2.5"

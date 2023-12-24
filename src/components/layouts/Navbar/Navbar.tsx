@@ -45,8 +45,14 @@ const routes = [
   {
     name: "Account",
     link: "/account",
-    Icon: SettingsIcon,
+    Icon: Message2Icon,
     id: 6,
+  },
+  {
+    name: "Settings",
+    link: "/settings",
+    Icon: SettingsIcon,
+    id: 7,
   },
 ];
 
@@ -57,15 +63,32 @@ const Navbar = () => {
         <Link href="/" className="">
           <AppIcon className="fill-current w-[30px] h-[28px]  lg:w-[83px] lg:h-[55.32px] text-white" />
         </Link>
-        <ul className="mt-[7rem]">
+        <ul className="mt-[6.3rem]">
           {routes.map((route) => (
             <li
               key={route.id}
-              className={`border-0 outline-none text-2xl pt-[11px] pb-[10px]  leading-normal  hover:bg-dark-bolder/10 hover:transition-all relative rounded-[7.57px] hover:duration-500  hover:text-dark-bolder/60 font-normal flex flex-col`}
+              className={`border-0 outline-none text-2xl leading-normal  hover:transition-all relative  font-normal -ml-4 flex flex-col`}
             >
-              <Link href={route.link} className="flex items-center gap-8">
-                <route.Icon />
-                {route.name}
+              <Link
+                href={route.link}
+                className={`flex items-center pl-4 my-[12px] hover:duration-500 hover:bg-dark-bolder/10 rounded-[7.57px] hover:last:text-dark-bolder/60  gap-[30px] py-[10px] tracking-wider mt-2.5 last:hover:text-white ${
+                  route.Icon === SettingsIcon
+                    ? "mt-40 hover:bg-transparent hover:text-white"
+                    : ""
+                }`}
+              >
+                <route.Icon
+                  className={`w-[2.3rem] h-[2.3rem] fill-current ${
+                    route.Icon === AddIcon
+                      ? "fill-none !w-[2.5rem] !h-[2.5rem]"
+                      : ""
+                  } ${
+                    route.Icon === SearchIcon
+                      ? "fill-none !w-[2.5rem] !h-[2.5rem] -mb-[2.5px]"
+                      : ""
+                  } `}
+                />
+                <div className="pr-10">{route.name}</div>
               </Link>
             </li>
           ))}
