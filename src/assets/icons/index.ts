@@ -9,6 +9,7 @@ import Message2Icon from "./Message2";
 import SearchIcon from "./Search";
 import SettingsIcon from "./Settings";
 import AddIcon from "./Add";
+import VerifiedBadge from "./brands/VerifiedBadge";
 
 export {
   AppIcon,
@@ -22,4 +23,5 @@ export {
   SearchIcon,
   SettingsIcon,
   AddIcon,
+  VerifiedBadge,
 };

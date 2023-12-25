@@ -4,7 +4,7 @@ const Add = ({ className }: { className: string }) => {
       width={42}
       height={42}
       viewBox="0 0 42 42"
-      fill="none"
+      fill={"fill-current"}
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
@@ -17,7 +17,7 @@ const Add = ({ className }: { className: string }) => {
       />
       <path
         d="M30 21L12 21"
-        stroke="white"
+        stroke={"white"}
         strokeWidth="4.09091"
         strokeLinecap="round"
       />

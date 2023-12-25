@@ -71,7 +71,7 @@ const Navbar = () => {
             >
               <Link
                 href={route.link}
-                className={`flex items-center pl-4 my-[12px] hover:duration-500 hover:bg-dark-bolder/10 rounded-[7.57px] hover:last:text-dark-bolder/60  gap-[30px] py-[10px] tracking-wider mt-2.5 last:hover:text-white ${
+                className={`flex items-center pl-4 my-[12px] hover:duration-500 hover:bg-dark-bolder/10 rounded-[7.57px] hover:!text-dark-bolder/60  gap-[30px] py-[10px] tracking-wider mt-2.5 last:hover:text-white ${
                   route.Icon === SettingsIcon
                     ? "mt-40 hover:bg-transparent hover:text-white"
                     : ""
@@ -80,11 +80,11 @@ const Navbar = () => {
                 <route.Icon
                   className={`w-[2.3rem] h-[2.3rem] fill-current ${
                     route.Icon === AddIcon
-                      ? "fill-none !w-[2.5rem] !h-[2.5rem]"
+                      ? "!fill-none !w-[2.5rem] !h-[2.5rem]"
                       : ""
                   } ${
                     route.Icon === SearchIcon
-                      ? "fill-none !w-[2.5rem] !h-[2.5rem] -mb-[2.5px]"
+                      ? "!fill-none text-white !w-[2.5rem] !h-[2.5rem] -mb-[2.5px]"
                       : ""
                   } `}
                 />
