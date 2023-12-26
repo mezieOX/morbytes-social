@@ -1,6 +1,6 @@
 import RootLayout from "./layout";
 import MainLayout from "@/components/layouts";
-import { Post, Reel } from "@/components/common/Home";
+import { Post, Reel, SwitchAccount } from "@/components/common/Home";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
           <Reel />
           <Post />
         </section>
-        <section>Sidebar</section>
+        <SwitchAccount />
       </MainLayout>
     </RootLayout>
   );

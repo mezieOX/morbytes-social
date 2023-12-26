@@ -15,7 +15,7 @@ const PostImages: React.FC<IPost> = ({
           <Image
             src={postImg}
             alt="title"
-            className="w-full"
+            className="w-full cursor-pointer"
             objectFit="cover"
           />
         </div>
@@ -30,25 +30,25 @@ const PostImages: React.FC<IPost> = ({
           <Image
             src={postImg}
             alt="title"
-            className="w-full"
+            className="w-full cursor-pointer"
             objectFit="cover"
           />
           <Image
             src={postImg}
             alt="title"
-            className="w-full"
+            className="w-full cursor-pointer"
             objectFit="cover"
           />
           <Image
             src={postImg}
             alt="title"
-            className="w-full"
+            className="w-full cursor-pointer"
             objectFit="cover"
           />
           <Image
             src={postImg}
             alt="title"
-            className="w-full"
+            className="w-full cursor-pointer"
             objectFit="cover"
           />
         </div>
@@ -63,19 +63,19 @@ const PostImages: React.FC<IPost> = ({
           <Image
             src={postImg}
             alt="title"
-            className="w-full col-start-1 row-start-1 row-end-2 col-end-7"
+            className="w-full col-start-1 row-start-1 row-end-2 col-end-7 cursor-pointer"
             objectFit="cover"
           />
           <Image
             src={postImg}
             alt="title"
-            className="w-full row-start-1 row-end-1 col-start-7 col-end-10"
+            className="w-full row-start-1 row-end-1 col-start-7 col-end-10 cursor-pointer"
             objectFit="cover"
           />
           <Image
             src={postImg}
             alt="title"
-            className="w-full  col-start-7 -mt-[9.8rem] col-end-10"
+            className="w-full  col-start-7 -mt-[9.8rem] col-end-10 cursor-pointer"
             objectFit="cover"
           />
         </div>

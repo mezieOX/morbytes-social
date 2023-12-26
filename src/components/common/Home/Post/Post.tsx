@@ -9,7 +9,7 @@ import PostImages from "./PostImages/PostImages";
 
 const Post = () => {
   return (
-    <>
+    <div className="-mb-20">
       {post.map(
         ({ id, userImg, postImg, verified, postImg2, postImg3, postImg4 }) => (
           <div className="w-full relative px-1 -mb-5" key={id}>
@@ -67,7 +67,7 @@ const Post = () => {
           </div>
         )
       )}
-    </>
+    </div>
   );
 };
 

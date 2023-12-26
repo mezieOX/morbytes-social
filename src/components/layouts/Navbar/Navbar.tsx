@@ -58,7 +58,7 @@ const routes = [
 
 const Navbar = () => {
   return (
-    <header>
+    <header className="flex-grow">
       <nav className="mt-[81px]">
         <Link href="/" className="">
           <AppIcon className="fill-current w-[30px] h-[28px]  lg:w-[83px] lg:h-[55.32px] text-white" />
@@ -71,7 +71,7 @@ const Navbar = () => {
             >
               <Link
                 href={route.link}
-                className={`flex items-center pl-4 my-[12px] hover:duration-500 hover:bg-dark-bolder/10 rounded-[7.57px] hover:!text-dark-bolder/60  gap-[30px] py-[10px] tracking-wider mt-2.5 last:hover:text-white ${
+                className={`flex items-center pl-4 pr-9 my-[17px] hover:duration-500 hover:bg-dark-bolder/10 rounded-[7.57px] hover:!text-dark-bolder/60  gap-[30px] py-[8px] tracking-wider w-min mt-2.5 last:hover:text-white ${
                   route.Icon === SettingsIcon
                     ? "mt-40 hover:bg-transparent hover:text-white"
                     : ""

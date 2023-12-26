@@ -13,7 +13,7 @@ const Button: FC<IButton> = ({
   return (
     <>
       {variant === "primary" && (
-        <button className={`bg-primary text-dark ${className}`}>
+        <button className={`bg-primary text-dark text-[9.5px] rounded cursor-pointer px-[12px] py-[1px] font-black ${className}`}>
           {children}
         </button>
       )}
