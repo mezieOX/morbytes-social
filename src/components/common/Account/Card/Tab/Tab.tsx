@@ -1,8 +1,5 @@
-import { Fragment } from "react";
-import Image from "next/image";
-
-import { Reel5 } from "@/constant/imgs";
 import { Tab } from "@headlessui/react";
+import TabItem from "./TabItem/TabItem";
 
 const lists = [
   {
@@ -24,14 +21,14 @@ const TabComponent = () => {
     <Tab.Group>
       <Tab.List
         className={
-          "self-center flex w-full max-w-full items-center justify-center gap-[4rem] mt-6"
+          "self-center flex w-full max-w-full items-center justify-center gap-[4rem] mt-6 -ml-20"
         }
       >
         {lists.map((item) => (
           <Tab
             key={item.id}
             as="div"
-            className="!outline-none !border-0 px-4 lg:px-1.5"
+            className="!outline-none !border-0 px-4 lg:px-1.5 "
           >
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
@@ -54,21 +51,15 @@ const TabComponent = () => {
       <Tab.Panels>
         <Tab.Panel>
           {" "}
-          <Image
-            src={Reel5}
-            alt="title"
-            className="w-[8px]"
-            objectFit="cover"
-          />
+          <TabItem />
         </Tab.Panel>
         <Tab.Panel>
           {" "}
-          <Image
-            src={Reel5}
-            alt="title"
-            className="w-[8px]"
-            objectFit="cover"
-          />
+          <TabItem />
+        </Tab.Panel>
+        <Tab.Panel>
+          {" "}
+          <TabItem />
         </Tab.Panel>
         {/* ... */}
       </Tab.Panels>
