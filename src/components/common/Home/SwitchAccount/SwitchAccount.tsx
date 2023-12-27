@@ -6,7 +6,7 @@ const SwitchAccount = () => {
     <div className="min-w-[14.6rem] max-w-[14.6rem] pt-20 min-h-screen max-h-screen pl-6">
       <div className="flex items-center gap-8">
         <div className="flex flex-col font-black tracking-wider text-white first-letter:uppercase text-[15px] flex-grow">
-          {"Morbytesuser123"}
+          {"user123"}
           <p className="text-[9.5px] cursor-pointer tracking-normal text-dark-lighter/40 font-extrabold">
             {"Best user in here"}
           </p>
