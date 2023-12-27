@@ -7,7 +7,7 @@ import TabComponent from "./Tab/Tab";
 
 const Card = () => {
   return (
-    <div className="rounded-lg w-[98.8%]">
+    <div className="rounded-lg w-[98.4%]">
       <div className="bg-dark self-stretch shadow-[0px_7px_7px_0px_#000000B2] pl-7 pr-[4.5rem] pb-[4.3rem] py-12 rounded-2xl max-md:max-w-full max-md:px-5">
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
           <div className="flex flex-col items-stretch w-[22%] max-md:w-full max-md:ml-0">
