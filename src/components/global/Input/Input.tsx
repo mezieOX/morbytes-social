@@ -6,6 +6,7 @@ const Input: React.FC<IInput> = ({
   label,
   labelClassName,
   type = "text",
+  postBtn = true,
 }) => {
   return (
     <div className="w-full flex flex-col mt-[5.2px]">
@@ -21,9 +22,11 @@ const Input: React.FC<IInput> = ({
         className={`border-0 border-dark-extraBold outline-0 flex-1 mx-[5.5px]  bg-transparent font-normal leading-4 text-[6.3px] text-dark-lighter/40 italic placeholder:text-dark-lighter/40 border-b ${className}`}
         placeholder={placeholder}
       />
-      <div className="text-primary ml-auto text-[10px] font-black mx-[5px] mt-[7px] cursor-pointer">
-        Post
-      </div>
+      {postBtn && (
+        <div className="text-primary ml-auto text-[10px] font-black mx-[5px] mt-[7px] cursor-pointer">
+          Post
+        </div>
+      )}
     </div>
   );
 };

@@ -22,6 +22,12 @@ const config: Config = {
           bolder: "#EAE9E9",
           muted: "#4E3401",
         },
+        gray: {
+          DEFAULT: "#0F0F0F",
+        },
+        red: {
+          DEFAULT: "#FF0000",
+        },
       },
     },
     fontFamily: {

@@ -4,4 +4,5 @@ export interface IInput {
   placeholder?: string;
   labelClassName?: string;
   type?: string;
+  postBtn?: boolean;
 }
