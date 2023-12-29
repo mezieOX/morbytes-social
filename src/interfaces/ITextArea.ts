@@ -1,9 +1,9 @@
-export interface IInput {
+export interface ITextArea {
   className?: string;
-  label?: string;
+  btnTitle?: string;
   placeholder?: string;
+  btnClassName?: string;
   labelClassName?: string;
-  type?: string;
-  postBtn?: boolean;
   containerClass?: string;
+  label?: string;
 }
