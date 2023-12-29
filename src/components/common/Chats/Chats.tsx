@@ -1,4 +1,3 @@
-import React from "react";
 import Aside from "./Aside/Aside";
 import MessageScreen from "./MessageScreen/MessageScreen";
 

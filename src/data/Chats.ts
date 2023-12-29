@@ -14,6 +14,7 @@ export const chats = [
     id: 1,
     image: Profile1,
     name: "Just received message",
+    read: true,
   },
   {
     id: 2,
@@ -34,6 +35,7 @@ export const chats = [
     id: 5,
     image: Profile5,
     name: "Just received message",
+    read: true,
   },
   {
     id: 6,
@@ -44,11 +46,13 @@ export const chats = [
     id: 7,
     image: Profile7,
     name: "Just received message",
+    read: true,
   },
   {
     id: 8,
     image: Profile8,
     name: "Just received message",
+    read: true,
   },
   {
     id: 9,

@@ -1,13 +1,14 @@
 import Image from "next/image";
 
+import { IPost } from "@/interfaces";
+import { post } from "@/data";
+import { Input } from "@/components/global";
 import { MenuIcon, VerifiedBadge } from "@/assets/icons";
+import PostImages from "./PostImages/PostImages";
 import NumberOfLikes from "./NumberOfLIkes/NumberOfLikes";
 import SocialIcons from "./SocialIcons/SocialIcons";
-import { Input } from "@/components/global";
-import { post } from "@/data";
-import PostImages from "./PostImages/PostImages";
 
-const Post = () => {
+const Post: React.FC<IPost> = () => {
   return (
     <div className="-mb-20">
       {post.map(

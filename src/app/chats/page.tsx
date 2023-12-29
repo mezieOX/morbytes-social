@@ -4,7 +4,7 @@ import { ChatsScreen } from "@/components/common/Chats";
 
 const ChatsPage = () => {
   return (
-    <RootLayout title={"Account"}>
+    <RootLayout title={"Chats"}>
       <MainLayout>
         <ChatsScreen />
       </MainLayout>
